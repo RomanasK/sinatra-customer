@@ -1,0 +1,42 @@
+<h3><b>Add New Customer<b></h3>
+
+<form action="/new_customer" method="post">
+ <input name="id" type="hidden" value="<%= @customer.id %>">
+
+  <table class="table table-bordered">
+
+    <tr>
+        <th>Parameter</th>
+        <th>Value</th>
+    </tr>
+
+
+    <tbody>
+
+        <tr>
+            <td>Name</td>
+            <td><input name="name" type="text" value="<%= @customer.name %>"></td>
+        </tr>
+
+        <tr>
+            <td>Surname</td>
+            <td><input name="surname" type="text" value="<%= @customer.surname %>"></td>
+        </tr>
+
+        <tr>
+            <td>Code</td>
+            <td><input name="code" type="text" value="<%= @customer.code %>"></td>
+        </tr>
+
+        <tr>
+            <td>Age</td>
+            <td><input name="age" type="text" value="<%= @customer.age %>"></td>
+        </tr>
+
+    </tbody>
+
+  </table>
+
+  <button type="submit" class="btn btn-warning">Save</button>
+
+</form>
